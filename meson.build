@@ -14,12 +14,11 @@ configure_file(output : 'config.hh', configuration : conf_data)
 configuration_inc = include_directories('src')
 
 pulse = dependency('libpulse')
-cxxopts = dependency('cxxopts')
 
 executable('pamixer', 
   sources : src,
   install : true,
   include_directories : configuration_inc,
-  dependencies : [pulse, cxxopts])
+  dependencies : [pulse])
 
 install_man('pamixer.1')

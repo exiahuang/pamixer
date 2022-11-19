@@ -19,7 +19,7 @@
 #include "pulseaudio.hh"
 #include "device.hh"
 
-#include <cxxopts.hpp>
+#include "cxxopts.hpp"
 
 #include <cmath>
 #include <list>
